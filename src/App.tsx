@@ -1,4 +1,3 @@
-import React from 'react';
 import { UserProvider, useUserContext } from './UserContext';
 import UserProfile from './UserProfile';
 import UserActivity from './UserActivity';

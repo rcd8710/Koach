@@ -1,6 +1,4 @@
-import React from 'react'
 import { useUserContext } from './UserContext';
-import { gapSize } from 'three/webgpu';
 
 export default function UserActivity() {
     const { currentUser, getUserActivities, users, setCurrentUser } = useUserContext();
@@ -29,8 +27,8 @@ export default function UserActivity() {
         <div className="user-activity">
             <div className="activity-header">
                 <h1>User Activities</h1>
-                <div> 
-                <button onClick={getPrevUser} className="nav-button" style={{ margin: '20px' }}>Prev User</button>
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <button onClick={getPrevUser} className="nav-button" style={{ marginRight: '10px' }}>Prev User</button>
 
                 <button onClick={getNextUser} className="nav-button">Next User</button>
                 </div>

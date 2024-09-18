@@ -1,4 +1,3 @@
-import React from 'react';
 import { useUserContext } from './UserContext';
 import './index.css';
 
